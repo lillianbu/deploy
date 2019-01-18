@@ -6,6 +6,8 @@ const dotenv = require(‘dotenv’).config();
 
 const app = express();
 
+require(‘dotenv’).config();
+
 app.use('/', views);
 app.use('/static', express.static('public'));
 
