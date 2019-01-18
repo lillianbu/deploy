@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/mit6148-workshops/catbook-workshop2#readme",
     "dependencies": {
+        "dotenv": "^6.2.0",
         "express": "^4.16.4",
         "http": "0.0.0",
         "nodemon": "^1.18.9"
