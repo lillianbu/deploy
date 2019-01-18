@@ -4,6 +4,8 @@ const views = require('./routes/views');
 
 const app = express();
 
+require(‘dotenv’).config();
+
 app.use('/', views);
 app.use('/static', express.static('public'));
 
@@ -21,10 +23,6 @@ app.use(function (err, req, res, next) {
     })
 });
 
-require(‘dotenv’).config();
-
 const port = (process.env.PORT || 3000);
 server = http.Server(app);
-server.listen(port, function () {
-    console.log('server listening on port ' + port);
-});
+server.listen(process.env.PORT || 5000);
